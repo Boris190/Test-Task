@@ -1,0 +1,74 @@
+@import  '../../styles';
+.mainContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1090px;
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;
+
+    @include phone {
+        flex-direction: column;
+    }
+
+    .video {
+        @include phone {
+            margin-bottom: 40px;
+        }
+       
+        iframe {
+            @include small {
+                width: 385px;
+            }
+        }
+    }
+
+    .aboutVideo {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        min-height: 270px;
+        text-align: center;
+        max-width: 527px;
+
+        @include phone {
+            min-height: 180px;
+        }
+
+        h3 {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 36px;
+            text-align: center;
+            color: #000000;
+            margin-bottom: 30px;
+        }
+        span {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #000000;
+            padding-bottom: 16px;
+        }
+
+        a {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #0000EE;
+        }
+
+       
+    }
+}

@@ -1,0 +1,44 @@
+@mixin phone {
+    @media (max-width: 767.8px) {
+      @content;
+    }
+  }
+  @mixin ipad {
+    @media (max-width: 1023.8px) {
+      @content;
+    }
+  }
+  @mixin tab {
+    @media (min-width: 768px) and (max-width: 1023.8px) {
+      @content;
+    }
+  }
+  @mixin not {
+    @media (min-width: 1024px) and (max-width: 1379.8px) {
+      @content;
+    }
+  }
+  @mixin small {
+    @media (max-width: 450px) {
+      @content;
+    }
+  }
+
+  @mixin xxl {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+  
+  @mixin elli() {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  @mixin lineClamp($line) {
+    display: -webkit-box;
+    -webkit-line-clamp: #{$line};
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
