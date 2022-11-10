@@ -1,3 +1,0 @@
-User-agent: *
-Sitemap: https://new-nextstack.nextstack.org/sitemap.xml
-Host: https://new-nextstack.nextstack.org
